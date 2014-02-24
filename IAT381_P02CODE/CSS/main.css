@@ -1,0 +1,223 @@
+body {
+ 	background-color:black;
+ 	text-align: center; 
+ } 
+
+
+h1 {
+font-family: Gill Sans, Helvetica, Arial, Sans-Serif;
+font-size: 1.75em; 
+font-weight: normal; 
+color: white;
+background-color: black;
+max-width:1200px;
+height:150px;
+padding:10px;
+border:10px;
+border-left:0px;
+margin-bottom:20px; 
+}
+
+h2 {
+font-family: Gill Sans, Helvetica, Arial, Sans-Serif;
+font-size: 1.5em; 
+font-weight: bold; 
+color: black;
+max-width:1200px;
+padding:10px;
+border:10px;
+margin:0px; 
+}
+
+h3 {
+font-family: Gill Sans, Helvetica, Arial, Sans-Serif;
+font-size: 1em; 
+font-style: italic; 
+color: black;
+padding:10px;
+border:10px;
+margin:0px;
+}
+
+p {font-family: Georgia, Times New Roman, Serif; 
+font-size: 0.90em; 
+color: black;
+max-width:1200px;
+padding:20px;
+border:20px;
+margin:0px;
+padding-right; 0px;  
+
+}
+
+
+nav a:link { 
+font-family: Gill Sans, Helvetica, Arial, Sans-Serif;
+color:white;
+background-color:black; 
+border-style:solid;
+border-right: transparent;
+border-left:transparent;
+border-top:transparent; 
+border-bottom-color:white;
+border-width:8px;
+font-size:1.25em;
+text-decoration:none;
+margin:20px;
+margin-right:0px; 
+margin-left:0px;
+  
+
+
+}
+
+nav a:hover, a:active {  
+font-family: Gill Sans, Helvetica, Arial, Sans-Serif;
+color:white;
+background-color:black; 
+border-style:solid;
+border-right: transparent;
+border-left:transparent;
+border-top:transparent; 
+border-bottom-color:red;
+border-width:8px;
+font-size:1.25em;
+text-decoration:none;
+margin:20px;
+margin-right:0px; 
+margin-left:0px;
+
+ 
+}
+
+
+#home {
+color:white;
+text-decoration:none;
+padding:5px; 
+
+}
+
+
+#about {
+color:white;
+text-decoration:none;
+padding:5px;   
+}
+
+#workshops {
+color:white;
+text-decoration:none;  
+padding:5px; 
+}
+
+#products {
+color:white;
+text-decoration:none;
+padding:5px;  
+}
+
+#lookbook {
+color:white;
+text-decoration:none; 
+padding:5px;   
+}
+
+#media {
+color:white;
+text-decoration:none; 
+padding:5px;   
+}
+
+#contact {
+color:white;
+text-decoration:none;
+padding:5px;     
+}
+
+#blog {
+color:white;
+text-decoration:none; 
+padding:5px;    
+}
+
+#updates {
+color:white;
+text-decoration:none;  
+padding:5px;  
+}
+
+
+#homeslideshow {
+padding-left:10px;  
+}
+
+#ReFindLogo {
+float: left; 
+
+}
+
+.mainblock {
+background-color:grey;
+box-sizing:border-box;
+-webkit-box-sizing:border-box; 
+-moz-box-sizing:border-box;
+min-height: 200px; 
+
+}
+
+.sidebar {
+background-color:#C8C8C8;
+box-sizing:border-box;
+-webkit-box-sizing:border-box; 
+-moz-box-sizing:border-box; 
+height:700px;    
+ 
+}
+
+.productslisting {
+background-color:white;
+box-sizing:border-box;
+-webkit-box-sizing:border-box; 
+-moz-box-sizing:border-box;
+min-height: 300px;  
+}
+
+.thumbnail {
+float:left;
+width: 120px; 
+margin: 0 15px 15px 0;
+padding: 10px;
+padding-left:15px;
+
+
+
+}
+
+#page-wrap {
+	text-align: left; 
+	width: 900px;
+	margin: 0 auto; 
+
+}
+/** Specify style for page-wrap ID to centre website **/
+
+ul, li {
+list-style-type:none; 
+
+}
+
+#item_nav a:link {
+font-family: Gill Sans, Helvetica, Arial, Sans-Serif; 
+font-size: 1em;  
+color:black; 
+text-decoration:none; 
+
+}
+
+#item_nav a:hover, a:active {
+font-family: Gill Sans, Helvetica, Arial, Sans-Serif;
+font-size: 1em; 
+color: white;
+text-decoration:none;  
+}
