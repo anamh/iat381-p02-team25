@@ -1,0 +1,327 @@
+body{ 
+	background-color: rgb(0,0,0);
+	color: rgb(0,0,0);
+	font-size: 100%;
+	font-family: "Gill Sans MT", Arial, Helvetica, sans-serif;
+	line-height: 1.25;
+	text-align: left;
+}
+
+
+
+#page-wrap {
+	text-align: left; 
+	width: 900px;
+	margin: 0 auto; 
+
+}
+/** Specify style for page-wrap ID to centre website **/
+
+
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+#ReFindLogo {
+float: left; 
+
+}
+
+a{
+	text-decoration: none;
+}
+
+a:link, a:visited{
+color: rgb(0,0,0);
+}
+
+a:hover, a:active{
+background-color: rgb(0,0,0);
+color:rgb(255,255,255);
+}
+
+ul, li {
+	list-style: none; 
+}
+
+
+.productsnav {
+	font-family: "Gill Sans MT", Arial, Helvetica, sans-serif;
+	color:white; 
+	font-size: .9em; 
+	text-align: left;
+
+}
+
+
+.mainheader img {
+	width: 30%;
+	height: auto;
+	margin: 2%;
+}
+
+.mainheader nav {
+	background-color: rgb(0,0,0);
+	height: 100%;
+	font-size: 150%;
+	margin-bottom: 3%;
+	overflow:auto;
+
+}
+
+.mainheader nav ul {
+
+	list-style: none;
+	margin: 0 auto;
+}
+
+.mainheader nav li {
+	float: left;
+	display: inline;
+	padding: 1% 1%;
+}
+
+.mainheader nav a:link, .mainheader nav a:visited {
+	color: rgb(255,255,255);
+	display: inline-block;
+	
+}
+
+.about {
+color:white;
+text-decoration:none; 
+border-style:solid;
+border-top: solid;
+border-width:10px;
+border-bottom: transparent;
+border-left: transparent;
+border-right: transparent;
+border-top-color:white;
+}
+
+.about:hover {
+  border-top-color: rgb(56,180,73);
+}
+
+.home {
+color:white;
+text-decoration:none; 
+border-style:solid;
+border-top: solid;
+border-width:10px;
+border-bottom: transparent;
+border-left: transparent;
+border-right: transparent;
+border-top-color:white;
+}
+
+.home:hover {
+  border-top-color: rgb(0,0,0);
+}
+
+.products {
+color:white;
+text-decoration:none; 
+border-style:solid;
+border-top: solid;
+border-width:10px;
+border-bottom: transparent;
+border-left: transparent;
+border-right: transparent;
+border-top-color:white;
+}
+
+.products:hover {
+  border-top-color: rgb(158,30,98);
+}
+
+.workshop {
+color:white;
+text-decoration:none; 
+border-style:solid;
+border-top: solid;
+border-width:10px;
+border-bottom: transparent;
+border-left: transparent;
+border-right: transparent;
+border-top-color:white;
+}
+
+.workshop:hover {
+  border-top-color: rgb(0,167,157);
+}
+
+.lookbook {
+color:white;
+text-decoration:none; 
+border-style:solid;
+border-top: solid;
+border-width:10px;
+border-bottom: transparent;
+border-left: transparent;
+border-right: transparent;
+border-top-color:white;
+}
+
+.lookbook:hover {
+  border-top-color: rgb(145,38,143);
+}
+
+
+.media {
+color:white;
+text-decoration:none; 
+border-style:solid;
+border-top: solid;
+border-width:10px;
+border-bottom: transparent;
+border-left: transparent;
+border-right: transparent;
+border-top-color:white;
+}
+
+.media:hover {
+  border-top-color: rgb(200,29,40);
+}
+
+
+.blog {
+color:white;
+text-decoration:none; 
+border-style:solid;
+border-top: solid;
+border-width:10px;
+border-bottom: transparent;
+border-left: transparent;
+border-right: transparent;
+border-top-color:white;
+}
+
+.blog:hover {
+  border-top-color: rgb(247,147,29);
+}
+
+.contact {
+color:white;
+text-decoration:none; 
+border-style:solid;
+border-top: solid;
+border-width:10px;
+border-bottom: transparent;
+border-left: transparent;
+border-right: transparent;
+border-top-color:white;
+}
+
+.contact:hover {
+  border-top-color: rgb(187,189,192);
+}
+
+
+
+.col-1of2 {
+  width: 70%;
+  margin-top:25px; 
+  float: left;
+  line-height: 25px;
+  overflow: hidden;
+  margin-right: 0 auto;
+  margin-top: 2px;
+}
+
+.productslisting {
+	background-color:white;
+	min-height: 20em; 
+	padding: 3% 5%; 
+	overflow:hidden; 
+	/** overflow:hidden keeps .thumbnail images nested in .productslisting tag **/
+}
+
+div.thumbnail {
+  	margin:5px;
+	padding: 5px;
+ 	 border:none;
+  	height:auto;
+  	width:auto;
+  	float:left;
+  	text-align:center;
+}
+
+div.thumbnail img {
+  display:inline;
+  margin:5px;
+  border:none;
+  height:108px;
+  width:108px; 
+}
+
+div.thumbnail img a:hover, a:active { 
+	background-color: rgb(158,30,98);
+}
+/** Trying to override "a" css style with SPECIFIC button effect **/
+
+.col-2of2 {
+  width: 30%;
+  margin-top:25px; 
+  float: left;
+  line-height: 25px;
+  overflow: hidden;
+  margin-right: 0 auto;
+  margin-top: 2px;
+}
+
+.sidebar{
+	float: left;
+	background-color: rgb(164,164,164);
+	padding: 10% 10%;
+	margin-bottom: 2%;
+}
+
+}
+
+.mainFooter{
+	width: 100%;
+	float: left;
+	background-color: rgb(0,0,0);
+	margin-top: 2%;
+}
+.mainFooter p {
+	color: rgb(255,255,255);
+	width: 90%;
+	margin: 2% auto;
+
+}
+
+@media only screen and (min-width:150px) and (max-width:1000px) {
+
+	.body {
+	width:90%; 
+	}
+	
+	#page-wrap {
+	width:90%; 
+	}
+	
+	img {
+	width:100%;  
+	}
+	
+	.thumbnail {
+	max-width: 100%;  
+ 	}
+	
+	.content {
+	width:100%; 
+	}
+	
+	
+}
+
+
+
+
+
