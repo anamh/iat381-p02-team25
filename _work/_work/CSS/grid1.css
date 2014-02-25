@@ -1,0 +1,241 @@
+body{ 
+	background-color: rgb(0,0,0);
+	color: rgb(0,0,0);
+	font-size: 100%;
+	font-family: "Gill Sans MT", Arial, Helvetica, sans-serif;
+	line-height: 1.25;
+	text-align: left;
+}
+
+
+
+#page-wrap {
+	text-align: left; 
+	width: 900px;
+	margin: 0 auto; 
+
+}
+/** Specify style for page-wrap ID to centre website **/
+
+
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+#ReFindLogo {
+float: left; 
+
+}
+
+a{
+	text-decoration: none;
+}
+
+a:link, a:visited{
+color: rgb(0,0,0);
+}
+
+a:hover, a:active{
+background-color: rgb(0,0,0);
+color:rgb(255,255,255);
+}
+
+
+
+.mainheader img {
+	width: 30%;
+	height: auto;
+	margin: 2%;
+}
+
+.mainheader nav {
+	background-color: rgb(0,0,0);
+	height: 100%;
+	font-size: 150%;
+	margin-bottom: 3%;
+	overflow:auto;
+
+}
+
+.mainheader nav ul {
+
+	list-style: none;
+	margin: 0 auto;
+}
+
+.mainheader nav li {
+	float: left;
+	display: inline;
+	padding: 1% 1%;
+}
+
+.mainheader nav a:link, .mainheader nav a:visited {
+	color: rgb(255,255,255);
+	display: inline-block;
+	
+}
+
+.about {
+color:white;
+text-decoration:none; 
+border-style:solid;
+border-bottom: solid;
+border-width:10px;
+border-top: transparent;
+border-left: transparent;
+border-right: transparent;
+border-bottom-color:white;
+}
+
+.about:hover {
+  border-bottom-color: rgb(56,180,73);
+}
+
+.home {
+color:white;
+text-decoration:none; 
+border-style:solid;
+border-bottom: solid;
+border-width:10px;
+border-top: transparent;
+border-left: transparent;
+border-right: transparent;
+border-bottom-color:white;
+}
+
+.home:hover {
+  border-bottom-color: rgb(0,0,0);
+}
+
+.products {
+color:white;
+text-decoration:none; 
+border-style:solid;
+border-bottom: solid;
+border-width:10px;
+border-top: transparent;
+border-left: transparent;
+border-right: transparent;
+border-bottom-color:white;
+}
+
+.products:hover {
+  border-bottom-color: rgb(158,30,98);
+}
+
+.workshop {
+color:white;
+text-decoration:none; 
+border-style:solid;
+border-bottom: solid;
+border-width:10px;
+border-top: transparent;
+border-left: transparent;
+border-right: transparent;
+border-bottom-color:white;
+}
+
+.workshop:hover {
+  border-bottom-color: rgb(0,167,157);
+}
+
+.lookbook {
+color:white;
+text-decoration:none; 
+border-style:solid;
+border-bottom: solid;
+border-width:10px;
+border-top: transparent;
+border-left: transparent;
+border-right: transparent;
+border-bottom-color:white;
+}
+
+.lookbook:hover {
+  border-bottom-color: rgb(145,38,143);
+}
+
+
+.media {
+color:white;
+text-decoration:none; 
+border-style:solid;
+border-bottom: solid;
+border-width:10px;
+border-top: transparent;
+border-left: transparent;
+border-right: transparent;
+border-bottom-color:white;
+}
+
+.media:hover {
+  border-bottom-color: rgb(200,29,40);
+}
+
+
+.blog {
+color:white;
+text-decoration:none; 
+border-style:solid;
+border-bottom: solid;
+border-width:10px;
+border-top: transparent;
+border-left: transparent;
+border-right: transparent;
+border-bottom-color:white;
+}
+
+.blog:hover {
+  border-bottom-color: rgb(247,147,29);
+}
+
+.contact {
+color:white;
+text-decoration:none; 
+border-style:solid;
+border-bottom: solid;
+border-width:10px;
+border-top: transparent;
+border-left: transparent;
+border-right: transparent;
+border-bottom-color:white;
+}
+
+.contact:hover {
+  border-bottom-color: rgb(187,189,192);
+}
+
+
+.col-1of1 {
+  width: 100%;
+  margin-top:25px; 
+  background-color: rgb(204,204,204);
+  float: left;
+  line-height: 25px;
+  overflow: hidden;
+  margin-right: 0 auto;
+  padding: 3% 5%;
+  margin-top: 2px;
+}
+
+
+.mainFooter{
+	width: 100%;
+	float: left;
+	background-color: rgb(0,0,0);
+	margin-top: 2%;
+}
+.mainFooter p {
+	color: rgb(255,255,255);
+	width: 90%;
+	margin: 2% auto;
+
+}
+
+
+
+
