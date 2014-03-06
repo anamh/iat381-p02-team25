@@ -6,10 +6,20 @@
 <link rel="stylesheet" href="CSS/style.css" type="text/css" />
 </head>
 <body onload="slider();">
+
 <div id="page-wrap" >
 <!-- Using page-wrap ID to centre the website!-->
+
 	<header class= "mainheader">
-		<img src="Images/logo.jpg" alt="logo">
+		<img src="Images/logo.jpg" alt="logo" id="ReFindLogo">
+		
+			<form class="search">
+				<p class="searchtext">Search</p>
+				<input type="search" class="searchfield">
+				<input type="submit" class=submitbutton>
+			</form><!-- End of .search --!>
+			<!-- Structure for search bar in above section --!>
+	
 		<nav><ul>
 			<li class="home" class="active" ><a href="Home.html">Home </a></li>
 			<li class="about"><a href="about.html">About Us </a></li>
@@ -43,29 +53,39 @@
 	</div> <!-- End of .mainblock --!>
 
 	<div class="productslisting">
+		
     
-      <h2>New Products</h2>
+      <h2 class="productsheader">New Products</h2>
 
      
-    	<div class="thumbnail">
-    	<a href="products.html"><img src="Images/Thumbnail1.jpg" alt="picture of necklace" height="108" width="108">
+    	<figure class="thumbnailwrapper">
+    	<a class="thumbnail" href="products.html"><img src="Images/Thumbnail1.jpg" alt="picture of necklace" height="108" width="108">
     	</a> 
-    	</div> <!-- End of div .thumbnail --!>
-    	<div class="thumbnail">
-    	<a href="products.html"><img src="Images/Thumbnail2.jpg" alt="product" height="108" width="108">
+    			<figcaption>Upcycled Blue Beauty</figcaption> 
+    	</figure> <!-- End of div .thumbnail --!>
+    	
+    		<div id="message_product1" style="width: 108px; padding10px; display:none;"> 
+    		A message about product one. 
+    		</div><!-- End of .message_product1 --!>
+    	
+    	<figure class="thumbnailwrapper">
+    	<a class="thumbnail"  href="products.html"><img src="Images/Thumbnail2.jpg" alt="product" height="108" width="108">
     	</a>
-    	</div> 	<!-- End of div .thumbnail --!>
+    		<figcaption>Add a POP of Colour with Bright Woven Bracelets</figcaption>
+    	</figure> 	<!-- End of div .thumbnail --!>
         
-    	<div class="thumbnail">    
-    	<a href="products.html"><img src="Images/Thumbnail3.jpg" alt="product" height="108" width="108">
+    	<figure class="thumbnailwrapper">   
+    	<a class="thumbnail"  href="products.html"><img src="Images/Thumbnail3.jpg" alt="product" height="108" width="108">
     	</a>
-    	</div> <!-- End of div .thumbnail --!>
+    		<figcaption>Metal and Hemp</figcaption>
+    	</figure> <!-- End of div .thumbnail --!>
     
-    	<div class="thumbnail">
-    	<a href="products.html"><img src="Images/Thumbnail4.jpg" alt="product" height="108" width="108">
+    	<figure class="thumbnailwrapper">
+    	<a class="thumbnail"  href="products.html"><img src="Images/Thumbnail4.jpg" alt="product" height="108" width="108">
     	</a>
-    	</div> <!-- End of div .thumbnail --!>
-      
+    		<figcaption> Dainty Skull Earrings</figcaption>
+    	</figure> <!-- End of div .thumbnail --!>
+    
     </div> <!-- End of .productslisting !-->
     
     
@@ -74,7 +94,7 @@
 		<div class="content">
 			<div class="topcontent">
 				<header>
-					<h2><a href="#" title=" First post"> First Post</a></h2>
+					<h2><a href="#" title=" First post" class="blogheader"> First Post</a></h2>
 				</header>
 				<footer>
 					<p class="post-info"> by Anam </p>
@@ -88,7 +108,7 @@
 
 			<div class="bottomcontent">
 				<header>
-					<h2><a href="#" title=" Second post"> Second Post</a></h2>
+					<h2><a href="#" title=" Second post" class="blogheader"> Second Post</a></h2>
 				</header>
 				<footer>
 					<p class="post-info"> by Anam </p>
@@ -121,16 +141,33 @@
 
 	
 	<footer class="mainFooter">
-		<p>Copyright</p>
-	</footer>
+		<p class="copyrightdisclaimer">Copyright</p>
+		
+		<div class="footernav"> 
+		<nav><ul>
+			<li class="footernav_element"><a href="Home.html">Home </a></li>
+			<li class="footernav_element"><a href="about.html">About Us </a></li>
+			<li class="footernav_element"><a href="products.html">Products </a></li>
+			<li class="footernav_element"><a href="workshops.html">Workshops </a></li>
+			<li class="footernav_element"><a href="lookbook.html">Look Book </a></li>
+			<li class="footernav_element"><a href="media.html">Media</a></li>
+			<li class="footernav_element"><a href="blog.html" >Blog </a></li>
+			<li class="footernav_element"><a href="contact.html">Contact Us </a></li>
+
+		</ul></nav>
+		</div> <!-- End of .footernav --!>
+	</footer><!-- End of .mainFooter --!>
 
 
 
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/jquery.cycle.all.js"></script>
 <script type="text/javascript" src="js/carousel.js"></script>
+<script type="text/javascript" src="js/productmessage.js"></script>
 
 	</div> <!-- End of #page-wrap ? --!>
 	
 </body>
 </html>
+
+

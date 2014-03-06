@@ -1,19 +1,66 @@
-body{ 
+/**-----------------------------------------------------------------------------------------------------------------
+DEFAULT BODY STYLE
+----------------------------------------------------------------------------------------------------------------**/ 
+
+body { 
 	background-color: rgb(0,0,0);
-	color: rgb(0,0,0);
 	font-size: 100%;
 	font-family: "Gill Sans MT", Arial, Helvetica, sans-serif;
 	line-height: 1.25;
 	text-align: left;
 }
 
+a {
+	text-decoration: none;
+}
+
+a:link, a:visited { 
+	color: rgb(0,0,0);
+}
+
+a:hover, a:active {
+	color:rgb(255,255,255);
+	text-decoration: underline; 
+}
+
 #page-wrap {
 	text-align: left; 
-	width: 900px;
+	width: 1000px;
 	margin: 0 auto; 
 
+} /** Specify style for page-wrap ID to centre website **/
+
+/**-----------------------------------------------------------------------------------------------------------------
+HEADER STYLE 
+-----------------------------------------------------------------------------------------------------------------**/
+
+.search {
+	float:left; 
+	font-size:1.25em;
+	margin-left:275px;
+	margin-top:100px;
+
 }
-/** Specify style for page-wrap ID to centre website **/
+
+.searchtext { 
+	float:left; 
+	color: white;
+	margin-right:5px; 
+	
+}
+
+.searchfield {
+	float:left;
+	margin-top:22px; 
+
+}
+
+	
+.submitbutton {
+	float:left; 
+	margin-top:22px; 
+
+} 
 
 
 
@@ -24,39 +71,25 @@ body{
 }
 
 #ReFindLogo {
-float: left; 
+float:left;
+margin-top:20px;
+ 
 
 }
-
-
-a {
-	text-decoration: none;
-}
-
-a:link, a:visited { 
-color: rgb(0,0,0);
-}
-
-a:hover, a:active {
-background-color: rgb(0,0,0);
-color:rgb(255,255,255);
-}
-
-
 
 .mainheader img {
 	width: 30%;
 	height: auto;
 	margin: 2%;
+	float:left;
+
 }
 
 .mainheader nav {
 	background-color: rgb(0,0,0);
-	height: 100%;
+	width:100%; 
 	font-size: 150%;
-	margin-bottom: 3%;
 	overflow:auto;
-
 }
 
 .mainheader nav ul {
@@ -77,6 +110,36 @@ color:rgb(255,255,255);
 	
 }
 
+/**-----------------------------------------------------------------------------------------------------------------
+H2 SECTION STYLE 
+-----------------------------------------------------------------------------------------------------------------**/
+
+.homerheader {
+
+}
+.aboutheader {
+
+}
+
+.productsheader {
+	color:rgb(158,30,98);
+
+}
+
+	a.blogheader {
+	color:rgb(247,147,29); 
+	}
+	
+	a.blogheader: hover, active {
+	color:rgb(204,204,204);
+	background-color: rgb(204,204,204);  
+	}
+	
+
+/**-----------------------------------------------------------------------------------------------------------------
+MAIN NAV STYLE 
+-----------------------------------------------------------------------------------------------------------------**/
+
 .about {
 color:white;
 text-decoration:none; 
@@ -91,6 +154,7 @@ border-top-color:white;
 
 .about:hover {
   border-top-color: rgb(56,180,73);
+  
 }
 
 .home {
@@ -191,6 +255,7 @@ border-top-color:white;
   border-top-color: rgb(247,147,29);
 }
 
+
 .contact {
 color:white;
 text-decoration:none; 
@@ -208,6 +273,13 @@ border-top-color:white;
 }
 
 
+
+/**-----------------------------------------------------------------------------------------------------------------
+PAGE CONTENT STYLE 
+-----------------------------------------------------------------------------------------------------------------**/ 
+
+
+
 .mainblock {
 background-color:black;
 height: 32rem; 
@@ -218,6 +290,119 @@ margin-bottom: 10px;
 
 }
 
+.productslisting {
+	background-color:white;
+	min-height: 20em; 
+	padding: 3% 5%; 
+	overflow:hidden; 
+	/** overflow:hidden keeps .thumbnail images nested in .productslisting tag **/
+}
+ 
+
+/* 
+
+.productslisting a:hover, a:active { 
+	background-color: rgb(158,30,98);
+}
+ */
+
+
+/** Trying to override "a" css style with SPECIFIC button effect **/
+
+
+
+.thumbnailwrapper {
+  	margin:5px;
+	padding: 5px;
+  	height:auto;
+  	width:auto;
+  	float:left;
+  	text-align:center;
+}
+
+a.thumbnail img {
+  margin:5px;
+  border:none;
+  height:108px;
+  width:108px; 
+  transition: 0.5s opacity; 
+  
+}
+
+a.thumbnail:hover {
+	background-color: white;
+}
+
+a.thumbnail:hover img {
+	opacity:0.5; 
+	
+
+}
+  
+div.partnerslogos {
+	display: block;
+	overflow: hidden; 
+	height: auto;
+	width:auto;
+	background: none;  
+}
+
+.mainContent {
+	display:block; 
+	line-height: 25px;
+	overflow: hidden;
+	margin-right: 0 auto;
+	background-color: #E8E8E8;
+ 	/** Use "faux column" effect so .top-sidebar appears to be the same 
+ 	height as .content. Tutorial link: http://www.hongkiat.com/blog/css-equal-height/ **/
+}
+
+.content{
+	width: 70%;
+	background-color: rgb(204,204,204);
+	float: left;
+}
+
+.topcontent{
+	
+	padding: 3% 5%;
+	margin-top: 2px;
+}
+
+.bottomcontent{
+	padding: 3% 5%;
+	margin-top: 2px;
+}
+
+.post-info{
+	font-style: italic;
+	color: rgb(255,255,255);
+	font-size: 85%;
+
+}
+
+.top-sidebar{
+	width: 30%;
+	float: left;
+	background-color: #E8E8E8;
+	padding: 2% 3%;
+	margin-bottom: 2%;
+}
+
+figcaption {
+	color: black;
+	font-size: 0.75em;
+	font-family: "Gill Sans MT", Arial, Helvetica, sans-serif;
+	font-style: italic;
+	text-align: left;
+	width:100px; 
+	
+}
+
+
+/**-----------------------------------------------------------------------------------------------------------------
+CAROUSEL STYLE 
+-----------------------------------------------------------------------------------------------------------------**/ 
 
 
 #carousel-frame{
@@ -278,99 +463,55 @@ margin-bottom: 10px;
 	margin-left: 30px;
 }
 
-.productslisting {
-	background-color:white;
-	min-height: 20em; 
-	padding: 3% 5%; 
-	overflow:hidden; 
-	/** overflow:hidden keeps .thumbnail images nested in .productslisting tag **/
-}
 
-div.thumbnail {
-  	margin:5px;
-	padding: 5px;
- 	 border:none;
-  	height:auto;
-  	width:auto;
-  	float:left;
-  	text-align:center;
-}
 
-div.thumbnail img {
-  display:inline;
-  margin:5px;
-  border:none;
-  height:108px;
-  width:108px; 
-}
+/**-----------------------------------------------------------------------------------------------------------------
+FOOTER STYLE AND NAV
+-----------------------------------------------------------------------------------------------------------------**/
 
-div.thumbnail img a:hover, a:active { 
-	background-color: rgb(158,30,98);
-}
-/** Trying to override "a" css style with SPECIFIC button effect **/
 
-  
-div.partnerslogos {
-	display: block;
-	overflow: hidden; 
-	height: auto;
-	width:auto;
-	background: none;  
-}
-
-.mainContent {
-	display:block; 
-	line-height: 25px;
-	overflow: hidden;
-	margin-right: 0 auto;
-	background-color: rgb(164,164,164);
- 	/** Use "faux column" effect so .top-sidebar appears to be the same 
- 	height as .content. Tutorial link: http://www.hongkiat.com/blog/css-equal-height/ **/
-}
-
-.content{
-	width: 70%;
-	background-color: rgb(204,204,204);
-	float: left;
-}
-
-.topcontent{
-	
-	padding: 3% 5%;
-	margin-top: 2px;
-}
-
-.bottomcontent{
-	padding: 3% 5%;
-	margin-top: 2px;
-}
-
-.post-info{
-	font-style: italic;
-	color: rgb(255,255,255);
-	font-size: 85%;
-
-}
-
-.top-sidebar{
-	width: 30%;
-	float: left;
-	background-color: rgb(164,164,164);
-	padding: 2% 3%;
-	margin-bottom: 2%;
-}
 .mainFooter{
 	width: 100%;
 	float: left;
 	background-color: rgb(0,0,0);
 	margin-top: 2%;
+	color: rgb(255,255,255);
 }
+
 .mainFooter p {
 	color: rgb(255,255,255);
 	width: 90%;
 	margin: 2% auto;
 
 }
+
+.mainFooter li {
+	color: rgb(255,255,255);
+
+}
+
+
+a.footernav: link, a:footernav: visited {
+	color: rgb(255,255,255); 
+}
+
+.footernav_element {
+	display:inline; 
+	float:left; 
+	padding:5px;
+	font-size:0.8em;
+
+}
+
+p.copyrightdisclaimer {
+	display:inline; 
+	float:left;
+
+}
+
+/**-----------------------------------------------------------------------------------------------------------------
+@MEDIA RESPONSIVE CODE
+-----------------------------------------------------------------------------------------------------------------**/
 
 @media only screen and (min-width:150px) and (max-width:900px) {
 
@@ -398,27 +539,16 @@ div.partnerslogos {
 	width:100%; 
 	}
 	
-	
-	#carousel-nav {
+	.mainblock {
 	width:100%; 
-	}
-	
-	#carousel-inner{
-	width:100%; 
-	}
-	
-	#prev {
-	width:10%; 
-	}
-	
-	#next {
-	width:10%; 
 	}
 	
 	div.partnerslogos {
 	display: inline-block;
 	width: 75%; 
 	}
+	
+	
 	
 	
 }
