@@ -7,11 +7,11 @@
 </head>
 <body>
 <div id="page-wrap" >
-<!-- Using page-wrap ID to centre the website!-->
+<!-- Using page-wrap ID to centre the website -->
   <header class= "mainheader">
     <img src="Images/logo.jpg" alt="logo">
     <nav><ul>
-      <li class="home" class="active" ><a href="Home.html">Home </a></li>
+      <li class="home"><a href="Home.html">Home </a></li>
       <li class="about"><a href="about.html">About Us </a></li>
       <li class="products"><a href="products.html">Products </a></li>
       <li class="workshop"><a href="workshops.html">Workshops </a></li>
@@ -29,17 +29,17 @@
     <div class="productslisting_detailpage">
     
 
-      <!-- Product details page features large image plus description plus price. --!>
+      <!-- Product details page features large image plus description plus price. -->
 
- 	<a href="products.html"> << Back to products </a>
+ 	<a href="products.html"> Back to products </a>
  		<figure class="productdetailsimg">
-    	<a href=""><img src="Images/Necklace_BobbyPin.jpg" alt="Necklace made of bobby pins" width="100%">
+    	<a href=""><img src="Images/Necklace_BobbyPin.jpg" alt="Necklace made of bobby pins">
     	</a> 
     			<figcaption>Conjure up an elegant illusion with string and bobby pins!</figcaption> 
-    	</figure> <!-- End of .productdetailsimg --!>
+    	</figure> <!-- End of .productdetailsimg -->
  		
     
-    </div> <!-- End of .productslisting !-->
+    </div> <!-- End of .productslisting_detailpage -->
     
     <div class="productspecs">
     	<h2>Product Details</h2>
@@ -50,14 +50,20 @@
     	</p>
     
     	<ul>
-    	<li>Price: $17.95</li> 
-    	<li><form> Quantity: <input type="number" class="field" name="quantity" maxlength="1" size="1"> 
-    	<input type="submit" class="button_addcart" value="ADD TO CART">
-    	</form></li>
+    	<li>Price: $17.95</li>
+    	<li><form> Quantity: <input type="number" class="field" name="quantity" maxlength="1" size="1"></li> 
+    	
+    	<br>
+    	
+    	<li><a href=""><input type="submit" class="button_productdetails" value="Add to Cart">
+    	</form></a></li> 
+    	<li><a href="" class="button_productdetails">Proceed to Checkout</a></li>
+    	<li><a href="products.html" class="button_productdetails">Back to Browse</a></li>
+    	
     
     	</ul>
-    </div><!--End of .productslisting_detailpage --!>
-</div><!-- End of .col-1of2--!>
+    </div><!--End of .productspecs -->
+</div><!-- End of .col-1of2-->
     
 <div class="col-2of2">
 <div class="sidebar">
@@ -70,7 +76,7 @@
 	<li><a href="" class="productsnavbutton">Earrings</a></li>
 	<li><a href="" class="productsnavbutton">Rings</a></li>
 	</ul>
-	</div><!--End of .productsnav --!>
+	</div><!--End of .productsnav -->
 	
 	<h3>Materials</h3>
 	<div class="productsnav"> 
@@ -83,25 +89,41 @@
 	<li><a href="" class="productsnavbutton">Cork</a></li>
 	<li><a href="" class="productsnavbutton">Wood</a></li>
 	</ul>
-	</div><!--End of .productsnav --!>
+	</div><!--End of .productsnav -->
 	
 	<h3>Used/New</h3>
 	<div class="productsnav"> 
 	<ul>
 	<li><a href="" class="productsnavbutton">Upcycled Used Materials</a></li>
 	<li><a href="" class="productsnavbutton">Ethically Sourced New Materials</a></li>
-	</div><!--End of productsnav --!>
+	</ul>
+	</div><!--End of productsnav -->
 	
 	
 </div>
 </div>
 
- </div><!-- End of .grid --!>
+ </div><!-- End of .grid -->
 
 	<footer class="mainFooter">
-		<p>Copyright</p>
-	</footer>
+		<p class="copyrightdisclaimer">Copyright</p>
+		
+		<div class="footernav"> 
+		<nav><ul>
+			<li><a href="Home.html">Home</a></li>
+			<li><a href="about.html">About Us</a></li>
+			<li><a href="products.html">Products</a></li>
+			<li><a href="workshops.html">Workshops</a></li>
+			<li><a href="lookbook.html">Look Book</a></li>
+			<li><a href="media.html">Media</a></li>
+			<li><a href="blog.html" >Blog </a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+
+		</ul></nav>
+		</div> <!-- End of .footernav --!>
+	</footer><!-- End of .mainFooter --!>
 
 
-</div> <!-- End of div page-wrap !-->
+
+</div> <!-- End of div page-wrap -->
 </body>

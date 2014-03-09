@@ -5,12 +5,13 @@ DEFAULT BODY STYLE
 
 body{ 
 
-	background-image: url("Images/Background_Rainbow.jpg") no-repeat;
+	background-image:url("/Images/Background_Bullseyes.png");
 	color: rgb(0,0,0);
 	font-size: 1em;
 	font-family: "Gill Sans MT", Arial, Helvetica, sans-serif;
 	line-height: 1.25;
 	text-align: left;
+
 	
 }
 
@@ -40,18 +41,13 @@ float:left;
 
 }
 
-
-#ReFindLogo {
-float: left; 
-
-}
-
 a {
 	text-decoration: none;
 }
 
 a:link, a:visited{
 color: rgb(0,0,0);
+text-decoration:none; 
 }
 
 
@@ -63,8 +59,9 @@ ul, li {
 }
 
 
-header {
-background-color:black;
+.mainheader {
+	background-color:black;
+	padding:30px;
 }
 
 
@@ -84,8 +81,6 @@ NAV STYLE
 	background-color: rgb(0,0,0);
 	height: 100%;
 	font-size: 150%;
-	padding-bottom:30px;
-	margin-left:30px;
 	overflow:auto;
 
 }
@@ -252,7 +247,7 @@ figcaption {
 
 .grid {
 
-	height:800px;
+	height:900px;
 
 }
 
@@ -281,13 +276,34 @@ figcaption {
 	/** overflow:hidden keeps .thumbnail images nested in .productslisting tag **/
 }
 
+.productspecs h2{
+	color: #9E1E62;  
+
+
+}
+
+.productslisting_detailpage a:hover, active {
+	text-decoration:underline;
+
+}
+
+
 .productslisting_mainpage {
-	background-color:#F0F0F0;
+	background-color:#FFFFFF;
 	min-height: 20em; 
 	padding: 3% 5%; 
 	overflow:scroll; 
 	height:100%; 
 
+}
+
+.productslisting_mainpage a:hover, active {
+	text-decoration:underline;
+
+}
+
+.productslisting_mainpage h2 {
+	color: #9E1E62; 
 }
 
 .productsnav{
@@ -305,25 +321,21 @@ figcaption {
 .productsnavbutton {
 	display:block; 
 	color: rgb(0, 0, 0);
-	background-color: rgb(158,30,98);
+	background-color:#9E1E62;
 	padding:5px;
 	width:100%; 
 	border:1px;
 	border-style:solid;
-	border-color: rgb(79,15,49); 
+	border-color: #DA3E8F; 
 }
 
-.productsnavbutton a:hover{
+.productsnav a:hover, active {
 
-	background-color: rgb(79,15,49);
+	background-color: #DA3E8F;
+	font-size:1.2em;
 	
 } 
 
-.productsnavbutton a:active{
-
-	background-color: rgb(79,15,49);
-		
-}
 
 .thumbnailwrapper {
   	margin:0px;
@@ -336,10 +348,12 @@ figcaption {
 
 a.thumbnail img {
   margin:5px;
-  border:none;
   height:180px;
   width:180px;
   transition: 0.5s opacity; 
+  border:5px;
+  border-style:solid;
+  border-color:#9E1E62; 
   
 }
 
@@ -362,26 +376,56 @@ a.thumbnail:hover img {
 	
 }
 
+.sidebar h3 {
+	color: #9E1E62; 
+}
+
 
 .productspecs { 
 	background-color: #D0D0D0; 
 	padding:10px;
-	height:20em;
 	height:100%;
 
 }
 
+
 .mainFooter{
 	width: 100%;
-	background-color: black;
-	margin:0;
-	float:left; 
+	float: left;
+	background-color: rgb(0,0,0);
+	color: rgb(255,255,255);
+	height:150px; 
+	padding-left:30px;
+	padding-right:30px;
 }
 
-.mainFooter p {
-	color: rgb(255,255,255);
-	width: 90%;
-	margin: 2% auto;
+.mainFooter nav{
+	position:relative;
+	left:400px;
+
+}
+
+.mainFooter a {
+	color:#FFFFFF; 
+	float:left;
+	display:inline; 
+	padding:5px;
+	font-size:0.9em;
+
+}
+
+.mainFooter a:hover, active{
+	text-decoration:underline;
+}
+
+.mainFooter ul {
+	list-style:none;
+
+}
+
+p.copyrightdisclaimer {
+	display:block; 
+	float:left;
 
 }
 
@@ -395,15 +439,21 @@ input.field {
 
 }
 
-.button_addcart {
+.button_productdetails {
 	font-size:1.2em;
 	border:none; 
-	background-color:#686868;
+	background-color:#999999;
+	padding:5px;
+	margin:5px;
+	margin-left:0px;
+	float:left;
+	
+
 }
 
-a.button_addcart: hover, active {
-	font-size:1.25em;
-	text-decoration:bold; 
+.productspecs a:hover{
+	background-color:#686868;
+	font-size:1.3em;
 	
 }
 
