@@ -7,9 +7,10 @@
 </head>
 <body>
 <div id="page-wrap" >
-<!-- Using page-wrap ID to centre the website -->
+<!-- Using page-wrap ID to centre the website!-->
+  
   <header class= "mainheader">
-    <img src="Images/logo.jpg" alt="logo" id="ReFindLogo">
+   <img src="Images/logo.jpg" alt="logo" id="ReFindLogo">
     
     <form class="search">
 				<p class="searchtext">Search</p>
@@ -19,7 +20,7 @@
 			<!-- Structure for search bar in above section --!>
 			
     <nav><ul>
-      <li class="home"><a href="Home.html">Home </a></li>
+      <li class="home" class="active" ><a href="Home.html">Home </a></li>
       <li class="about"><a href="about.html">About Us </a></li>
       <li class="products"><a href="products.html">Products </a></li>
       <li class="workshop"><a href="workshops.html">Workshops </a></li>
@@ -34,49 +35,42 @@
 <div class="grid">
 	
 	<div class="col-1of2">
-    <div class="productslisting_detailpage">
+    <div class="productslisting_mainpage">
     
-
-      <!-- Product details page features large image plus description plus price. -->
-
- 		<ul>
-			<li><a href="products.html">Back to All Products</a></li>
-			<li><a href="Home.html">Back to Home</a></li>
+			
+		<ul>
+		<li><a href="products.html">Back to All Products</a></li>
+		<li><a href="Home.html">Back to Home</a></li>
 		</ul>
- 	
- 	
- 		<figure class="productdetailsimg">
-    	<a href=""><img src="Images/Necklace_BobbyPin.jpg" alt="Necklace made of bobby pins">
-    	</a> 
-    			<figcaption>Conjure up an elegant illusion with string and bobby pins!</figcaption> 
-    	</figure> <!-- End of .productdetailsimg -->
- 		
-    
-    </div> <!-- End of .productslisting_detailpage -->
-    
-    <div class="productspecs">
-    	<h2>Product Details</h2>
-    
-    	<p>
-   		Hand-painted bobby pins assembled on a delicate chain make for one
-   		elegant showstopper!
-    	</p>
-    
-    	<ul>
-    	<li>Price: $17.95</li>
-    	<li><form action="productcheckout1.html" method="get"> 
-    	Quantity: <input type="number" class="field" name="quantity" maxlength="1" size="1"></li> 
+		
+	
+      <h2>Necklaces</h2>
     	
-    	<br>
+    	<figure class="thumbnailwrapper">
+    	<a class="thumbnail"  href="productdetails.html"><img src="Images/Necklace_PaperBlack.jpg" alt="A black paper necklace"></a>
+    		<figcaption>Upcycled paper necklace in black and white</figcaption>
+    	</figure> <!-- End of div .thumbnail --!>
     	
-    	<li><a href="" class="button_productdetails">Add to Cart</a></li>
-    	<li><input type="submit" class="button_productdetails" value="Proceed to Checkout"></form></li>
-    	<li><a href="products.html" class="button_productdetails">Back to Browse</a></li>
+    	<figure class="thumbnailwrapper">
+    	<a class="thumbnail"  href="productdetails.html"><img src="Images/Necklace_PaperBrown.jpg" alt="a brown paper necklace"></a>
+    		<figcaption>Upcycled paper necklace in brown</figcaption>
+    	</figure> <!-- End of div .thumbnail --!>
     	
+    	<figure class="thumbnailwrapper">
+    	<a class="thumbnail"  href="productdetails.html"><img src="Images/Necklace_PaperPink.jpg" alt="A pink paper necklace"></a>
+    		<figcaption>Upcycled paper necklace in pink</figcaption>
+    	</figure> <!-- End of div .thumbnail --!>
+
+
+		<figure class="thumbnailwrapper">
+    	<a class="thumbnail"  href="productdetails.html"><img src="Images/Necklace_BobbyPin.jpg" alt="A bobby pin necklace"></a>
+    		<figcaption>Upcycled bobby pin necklace in black and gold</figcaption>
+    	</figure> <!-- End of div .thumbnail --!>
+
+
     
-    	</ul>
-    </div><!--End of .productspecs -->
-</div><!-- End of .col-1of2-->
+    </div> <!-- End of .productslisting_mainpage !-->
+ </div><!-- End of .col-1of2--!>
     
 <div class="col-2of2">
 <div class="sidebar">
@@ -90,7 +84,7 @@
 	<li><a href="productdetails_earrings.html" class="productsnavbutton">Earrings</a></li>
 	<li><a href="productdetails_rings.html" class="productsnavbutton">Rings</a></li>
 	</ul>
-	</div><!--End of .productsnav -->
+	</div><!--End of .productsnav --!>
 	
 	<h3>Materials</h3>
 	<div class="productsnav"> 
@@ -114,11 +108,10 @@
 	</div><!--End of productsnav -->
 	
 	
+</div><!-- End.sidebar_products -->
+</div><!-- End.sidebar -->
 </div>
-</div>
-</div>
-
- </div><!-- End of .grid -->
+ </div><!-- End of .grid --!>
 
 	<footer class="mainFooter">
 		<p class="copyrightdisclaimer">Copyright</p>
@@ -140,5 +133,6 @@
 
 
 
-</div> <!-- End of div page-wrap -->
+</div> <!-- End of div page-wrap !-->
 </body>
+</html> 
