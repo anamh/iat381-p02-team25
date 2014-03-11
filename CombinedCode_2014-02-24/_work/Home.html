@@ -6,10 +6,22 @@
 <link rel="stylesheet" href="CSS/style.css" type="text/css" />
 </head>
 <body onload="slider();">
+
+
+
 <div id="page-wrap" >
 <!-- Using page-wrap ID to centre the website!-->
+
 	<header class= "mainheader">
-		<img src="Images/logo.jpg" alt="logo">
+		<img src="Images/logo.jpg" alt="logo" id="ReFindLogo">
+		
+			<form class="search">
+				<p class="searchtext">Search</p>
+				<input type="search" class="searchfield" name="sitesearch">
+				<a href=""><input type="submit" class="submitbutton"></a>
+			</form><!-- End of .search --!>
+			<!-- Structure for search bar in above section --!>
+	
 		<nav><ul>
 			<li class="home" class="active" ><a href="Home.html">Home </a></li>
 			<li class="about"><a href="about.html" class="drop">About Us </a>
@@ -150,39 +162,45 @@
 			<div id="carousel-inner">
 
 				<ul id="slides">
-					<li><img src="slide1.jpg" alt="" /></li>
-					<li><img src="slide2.jpg" alt="" /></li>
+					<li><img src="slide1.jpg" alt="" width="900" height="600"/></li>
+					<li><img src="slide2.jpg" alt="" width="900" height="600" /></li>
 				</ul>
 			</div> <!-- End of #carousel-inner --!>
-		</div> <!-- End of #carousel-frame --!>
+		</div> <!-- End of #carousel-frame -->
 
-	</div> <!-- End of .mainblock --!>
+	</div> <!-- End of .mainblock -->
 
 	<div class="productslisting">
+		
     
-      <h2>New Products</h2>
+      <a href="products.html"><h2>New Products</h2></a>
 
      
-    	<div class="thumbnail">
-    	<a href="products.html"><img src="Images/Thumbnail1.jpg" alt="picture of necklace" height="108" width="108">
+    	<figure class="thumbnailwrapper">
+    	<a class="thumbnail" href="productdetails.html"><img src="Images/Bracelet_Can.jpg" alt="picture of necklace">
     	</a> 
-    	</div> <!-- End of div .thumbnail --!>
-    	<div class="thumbnail">
-    	<a href="products.html"><img src="Images/Thumbnail2.jpg" alt="product" height="108" width="108">
+
+    	</figure> <!-- End of div .thumbnail -->
+    	
+    	<figure class="thumbnailwrapper">
+    	<a class="thumbnail"  href="productdetails.html"><img src="Images/Bracelet_Rainbow.jpg" alt="product">
     	</a>
-    	</div> 	<!-- End of div .thumbnail --!>
+    	</figure> 	<!-- End of div .thumbnail -->
         
-    	<div class="thumbnail">    
-    	<a href="products.html"><img src="Images/Thumbnail3.jpg" alt="product" height="108" width="108">
+    	<figure class="thumbnailwrapper">   
+    	<a class="thumbnail"  href="productdetails.html"><img src="Images/Earrings_BlueRound.jpg">
     	</a>
-    	</div> <!-- End of div .thumbnail --!>
+    	</figure> <!-- End of div .thumbnail -->
     
-    	<div class="thumbnail">
-    	<a href="products.html"><img src="Images/Thumbnail4.jpg" alt="product" height="108" width="108">
-    	</a>
-    	</div> <!-- End of div .thumbnail --!>
-      
-    </div> <!-- End of .productslisting !-->
+    	<figure class="thumbnailwrapper">
+    	<a class="thumbnail"  href="productdetails.html"><img src="Images/Earrings_BlueTear.jpg" alt="product"></a>
+    	</figure> <!-- End of div .thumbnail -->
+    	
+    	<figure class="thumbnailwrapper">
+    	<a class="thumbnail"  href="productdetails.html"><img src="Images/Earrings_Green.jpg" alt="product"></a>
+    	</figure> <!-- End of div .thumbnail -->
+    
+    </div> <!-- End of .productslisting -->
     
     
 	
@@ -190,30 +208,37 @@
 		<div class="content">
 			<div class="topcontent">
 				<header>
-					<h2><a href="#" title=" First post"> First Post</a></h2>
+					<a href="blog.html" title=" First post"><h2>Vintage Costume Jewelry: Upcycled & Repurposed</h2></a>
 				</header>
 				<footer>
-					<p class="post-info"> by Anam </p>
+					<p class="post-info"> by Laura </p>
 				</footer>
 
 				<div class="post-content">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+					<p>Vintage costume jewelry is one of those things that's really fun to upcycle into something new. Why? Because...well, they're pretty, and sparkly, and girlie... and if you're lucky enough to inherit some from your family, the pieces have a special meaning, since they are a connection not only to the past, but to the past of someone you love.
+Enamel flower pins, rhinestone brooches, orphaned earrings with clusters of pearls - even shoe clips have new life once they're upcycled into something new. Broken jewelry? There's a reason you kept it, isn't there? Check out the photos below and see what some creative folks have done with vintage costume jewelry and maybe you'll be inspired to go on an old jewelry treasure hunt of your own!
+*One final note: Before you disassemble or repurpose any vintage jewelry, make sure it's not valuable! 
+					</p> <!-- [- Post Retrieved from http://dishfunctionaldesigns.blogspot.ca/2012/06/vintage-costume-jewelry-upcycled.html#sthash.IZVrLOvQ.dpuf] -->
 				</div> <!-- End of .post-content --!>
 			</div> <!-- End of .topcontent --!>
 
 			<div class="bottomcontent">
 				<header>
-					<h2><a href="#" title=" Second post"> Second Post</a></h2>
+					<a href="blog.html" title=" Second post"><h2>Book Review: Creative Beaded Jewelry</h2></a>
 				</header>
 				<footer>
-					<p class="post-info"> by Anam </p>
+					<p class="post-info"> by Mortira </p>
 				</footer>
 
 				<div class="post-content">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+					<p>For all of the millions of bead styles available around the world today, there are a million and one ways to combine them into gorgeous jewelry. Finding just the right method to display a gorgeous focal or set of lampwork beads can be a challenge, and it helps to start with a theme to focus on that will showcase the qualities that you love about your chosen materials.
 
+In Creative Beaded Jewelry,the talented beader Carolyn Schulz uses inspirations from Asian art and design to capture the essence of great beads. With themes from China, Japan, India and Tibet, some of the best bead qualities are highlighted in easy to make designs. Color, texture and pattern are combined with favorite stringing techniques that every bead lover will want to try.
+
+Each chapter in the book highlights a different stringing material, with a basic overview of how to use it in jewelry design. Quick and delightful projects for necklaces, bracelets, rings and earrings follow, with bead combinations inspired by traditional and modern aesthetics from the East. Beginners and experienced beaders will love the new and improved takes on using elastic cord, memory wire, stringing wire, knotted cords, and chain. Every project provides inspiration notes, a full materials list, and step by step instructions with helpful diagrams. Many of the projects are deceptively simple, and are perfect for instant gratification beading!
+
+Carolyn has captured some truly gorgeous inspirations in the 33 projects, which include plenty of jade, pearls, and floral patterns. If you love the look of Asian art, or just need a great resource for busting your bead stash, Creative Beaded Jewelry will not disappoint.</p>
+				<!--Post retrieved from [http://inspirationalbeading.blogspot.ca/] -->
 				</div> <!--End of post-content --!>
 				
 			</div> <!-- End of .bottomcontent --!>
@@ -224,11 +249,11 @@
 			
 			<div class="partnerslogos">
 
-			<img src="Images/Partner1EFF_Logo.jpg" alt="Ethical Fashion Forum" height="80%" width="80%">
+			<a href ="http://www.ethicalfashionforum.com/"><img src="Images/Partner1EFF_Logo.jpg" class="partnerimg" alt="Ethical Fashion Forum" ></a>
 			
-			<img src="Images/Partner2BrilliantEarth_Logo.jpg" alt=" Brilliant Earth Logo" height="80%" width="80%" >
+			<a href="http://www.brilliantearth.com/"><img src="Images/Partner2BrilliantEarth_Logo.jpg" class="partnerimg" alt=" Brilliant Earth Logo"></a>
 			
-			<img src="Images/Partner4StyleHeart_Logo.jpg" alt=" Style with Heart" height="80%" width="80%" >
+			<a href="http://www.stylewithheart.com/"><img src="Images/Partner4StyleHeart_Logo.jpg" class="partnerimg" alt=" Style with Heart"></a>
 			</div> <!-- End of .partnerslogos--!>
 			
 		</div> <!-- End of .top-sidebar --!>
@@ -237,16 +262,33 @@
 
 	
 	<footer class="mainFooter">
-		<p>Copyright</p>
-	</footer>
+		<p class="copyrightdisclaimer">Copyright</p>
+		
+		<div class="footernav"> 
+		<nav><ul>
+			<li><a href="Home.html">Home</a></li>
+			<li><a href="about.html">About Us</a></li>
+			<li><a href="products.html">Products</a></li>
+			<li><a href="workshops.html">Workshops</a></li>
+			<li><a href="lookbook.html">Look Book</a></li>
+			<li><a href="media.html">Media</a></li>
+			<li><a href="blog.html" >Blog </a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+
+		</ul></nav>
+		</div> <!-- End of .footernav --!>
+	</footer><!-- End of .mainFooter --!>
 
 
 
 <script type="text/javascript" src="js/jquery.js"></script>
 <script type="text/javascript" src="js/jquery.cycle.all.js"></script>
 <script type="text/javascript" src="js/carousel.js"></script>
+<script type="text/javascript" src="js/productmessage.js"></script>
 
 	</div> <!-- End of #page-wrap ? --!>
 	
 </body>
 </html>
+
+

@@ -1,18 +1,28 @@
+/**-----------------------------------------------------------------------------------------------------------------
+DEFAULT BODY STYLE
+----------------------------------------------------------------------------------------------------------------**/ 
+
+
 body{ 
-	background-color: rgb(0,0,0);
+
+	background-image:url("/Images/Background_Bullseyes.png");
 	color: rgb(0,0,0);
-	font-size: 100%;
+	font-size: 1em;
 	font-family: "Gill Sans MT", Arial, Helvetica, sans-serif;
 	line-height: 1.25;
 	text-align: left;
+
+	
 }
 
 
 
 #page-wrap {
 	text-align: left; 
-	width: 900px;
+	width: 1000px;
 	margin: 0 auto; 
+	color:black;
+
 
 }
 /** Specify style for page-wrap ID to centre website **/
@@ -25,36 +35,41 @@ body{
   box-sizing: border-box;
 }
 
-
-#ReFindLogo {
-float: left; 
+.productdetailsimg {
+padding:0;
+float:left;
 
 }
 
-a{
+a {
 	text-decoration: none;
 }
 
 a:link, a:visited{
 color: rgb(0,0,0);
+text-decoration:none; 
 }
 
-a:hover, a:active{
-background-color: rgb(0,0,0);
-color:rgb(255,255,255);
-}
+
 
 ul, li {
-	list-style: none; 
+	list-style: none;
+	text-align:left; 
+	padding-left:0; 
+}
+
+#ReFindLogo {
+float:left;
+margin-top:20px;
+ 
+
 }
 
 
-.productsnav {
-	font-family: "Gill Sans MT", Arial, Helvetica, sans-serif;
-	color:white; 
-	font-size: .9em; 
-	text-align: left;
-
+.mainheader {
+	background-color:black;
+	padding:30px;
+	height:300px;
 }
 
 
@@ -62,15 +77,61 @@ ul, li {
 	width: 30%;
 	height: auto;
 	margin: 2%;
+	float:left;
+
+	
+	
 }
+
+.search {
+	float:left; 
+	font-size:1.25em;
+	margin-left:275px;
+	margin-top:100px;
+
+}
+
+.searchtext { 
+	float:left; 
+	color: white;
+	margin-right:5px; 
+	
+}
+
+.searchfield {
+	float:left;
+	margin-top:22px; 
+
+}
+
+	
+.submitbutton {
+	float:left; 
+	position:relative;
+	top:15px; 
+	padding:3px;
+	font-size:0.7em;
+	border:none; 
+	background-color:#C0C0C0;
+	margin:5px;
+	
+
+} 
+
+
+
+/**-----------------------------------------------------------------------------------------------------------------
+NAV STYLE
+----------------------------------------------------------------------------------------------------------------**/ 
 
 .mainheader nav {
 	background-color: rgb(0,0,0);
-	height: 100%;
+	width:100%; 
 	font-size: 150%;
-	margin-bottom: 3%;
 	overflow:auto;
-
+	position:relative; 
+	top:25px;
+	left:30px;
 }
 
 .mainheader nav ul {
@@ -90,6 +151,7 @@ ul, li {
 	display: inline-block;
 	
 }
+
 
 .about {
 color:white;
@@ -222,81 +284,297 @@ border-top-color:white;
 }
 
 
+figcaption {
+	color: black;
+	font-size: 0.75em;
+	font-family: "Gill Sans MT", Arial, Helvetica, sans-serif;
+	font-style: italic;
+	text-align: left;
+
+	
+	
+}
+
+.grid {
+
+	height:900px;
+
+}
+
 
 .col-1of2 {
   width: 70%;
-  margin-top:25px; 
   float: left;
   line-height: 25px;
   overflow: hidden;
-  margin-right: 0 auto;
-  margin-top: 2px;
+  height:100%;
+  overflow:scroll;
+  
+ 
 }
 
-.productslisting {
+.col-2of2 {
+  width: 30%;
+  float: left;
+  line-height: 25px;
+  overflow: hidden;
+  height:100%;
+}
+
+.productslisting_detailpage {
 	background-color:white;
 	min-height: 20em; 
-	padding: 3% 5%; 
-	overflow:hidden; 
+	padding-top:20px;
+	padding-left:20px; 
+	overflow:scroll; 
 	/** overflow:hidden keeps .thumbnail images nested in .productslisting tag **/
 }
 
-div.thumbnail {
-  	margin:5px;
+
+.productslisting_mainpage {
+	position:relative;
+	min-height:100%;
+	overflow:scroll;
+	padding-top:20px;
+	padding-left:20px;
+}
+
+
+
+.productspecs { 
+	background-color: #D0D0D0; 
+	padding-left:20px;
+	padding-top:10px;
+	height:100%;
+	
+
+}
+
+.productspecs h2{
+	color: #9E1E62;
+ 
+
+
+}
+
+.productslisting_detailpage a:hover, active {
+	text-decoration:underline;
+
+}
+
+
+.maincontent {
+	background-color:#FFFFFF;
+	min-height: 20em; 
+	padding: 3% 5%; 
+	overflow:scroll; 
+	height:100%; 
+	float:left;
+
+}
+
+.maincontent a:hover, active {
+	text-decoration:underline;
+
+}
+
+.maincontent h2 {
+	color: #9E1E62; 
+}
+
+.productsnav{
+	display:block; 
+	font-family: "Gill Sans MT", Arial, Helvetica, sans-serif; 
+	font-size: 1.15em; 
+	width:100%;
+	margin-right:0;
+
+
+}
+
+.blogposts h2 {
+	color:rgb(247,147,29);
+	width:450px; 
+}
+
+.blogposts p {
+	width:450px;
+}
+
+.blognav {
+	display:block; 
+	font-family: "Gill Sans MT", Arial, Helvetica, sans-serif;
+	font-size: 1.15em; 
+	width:100%;
+	margin-right:0;
+
+}
+
+.blognav a:hover, active {
+
+	background-color: #f9ae56;
+	font-size:1.15em;
+	
+} 
+
+.blognavbutton {
+	display:block; 
+	color: rgb(0, 0, 0);
+	background-color:#f7931d;
+	padding:5px;
+	width:100%; 
+	border:1px;
+	border-style:solid;
+	border-color: #f9ae56; 
+	text-align:center;
+}
+
+.productsnavbutton {
+	display:block; 
+	color: rgb(0, 0, 0);
+	background-color:#9E1E62;
+	padding:5px;
+	width:100%; 
+	border:1px;
+	border-style:solid;
+	border-color: #DA3E8F; 
+	text-align:center;
+}
+
+.productsnav a:hover, active {
+
+	background-color: #DA3E8F;
+	font-size:1.15em;
+	
+} 
+
+
+.thumbnailwrapper {
+  	margin:0px;
 	padding: 5px;
- 	 border:none;
   	height:auto;
   	width:auto;
   	float:left;
   	text-align:center;
+  	overflow:scroll;
 }
 
-div.thumbnail img {
-  display:inline;
+a.thumbnail img {
   margin:5px;
-  border:none;
-  height:108px;
-  width:108px; 
+  height:180px;
+  width:180px;
+  transition: 0.5s opacity; 
+  border:5px;
+  border-style:solid;
+  border-color:#9E1E62; 
+  
 }
 
-div.thumbnail img a:hover, a:active { 
-	background-color: rgb(158,30,98);
+a.thumbnail:hover {
+	background-color: white;
 }
-/** Trying to override "a" css style with SPECIFIC button effect **/
 
-.col-2of2 {
-  width: 30%;
-  margin-top:25px; 
-  float: left;
-  line-height: 25px;
-  overflow: hidden;
-  margin-right: 0 auto;
-  margin-top: 2px;
+a.thumbnail:hover img {
+	opacity:0.5; 
+	
 }
+
 
 .sidebar{
 	float: left;
 	background-color: rgb(164,164,164);
-	padding: 10% 10%;
-	margin-bottom: 2%;
+	padding: 0;
+	height:100%;
+	width:100%;
+	
 }
 
+.sidebar_products h3 {
+	color: #9E1E62; 
+	text-align:center;
 }
+
+.sidebar_blog h3 {
+	color:#f7931d;
+	text-align:center; 
+}
+
+.sidebar_blog h4 {
+	text-align:center; 
+}
+
+
+
 
 .mainFooter{
 	width: 100%;
 	float: left;
 	background-color: rgb(0,0,0);
-	margin-top: 2%;
-}
-.mainFooter p {
 	color: rgb(255,255,255);
-	width: 90%;
-	margin: 2% auto;
+	height:150px; 
+	padding-left:30px;
+	padding-right:30px;
+}
+
+.mainFooter nav{
+	position:relative;
+	left:400px;
 
 }
 
-@media only screen and (min-width:150px) and (max-width:1000px) {
+.mainFooter a {
+	color:#FFFFFF; 
+	float:left;
+	display:inline; 
+	padding:5px;
+	font-size:0.9em;
+
+}
+
+.mainFooter a:hover, active{
+	text-decoration:underline;
+}
+
+.mainFooter ul {
+	list-style:none;
+
+}
+
+p.copyrightdisclaimer {
+	display:block; 
+	float:left;
+
+}
+
+/**-----------------------------------------------------------------------------------------------------------------
+FORM STYLE
+----------------------------------------------------------------------------------------------------------------**/ 
+
+input.field {
+	resize:horizontal; 
+	width:4em; 
+
+}
+
+.button_productdetails {
+	font-size:1.2em;
+	border:none; 
+	background-color:#999999;
+	padding:5px;
+	margin:5px;
+	margin-left:0px;
+	float:left;
+	
+
+}
+
+.productspecs a:hover{
+	background-color:#686868;
+	font-size:1.3em;
+	
+}
+
+@media only screen and (min-width:150px) and (max-width:600px) {
 
 	.body {
 	width:90%; 
@@ -314,10 +592,25 @@ div.thumbnail img a:hover, a:active {
 	max-width: 100%;  
  	}
 	
-	.content {
+	.col-1of2 {
+	width:100%; 
+	}
+	.col-2of2 {
 	width:100%; 
 	}
 	
+	.mainFooter {
+	width:100%;
+	}
+	
+	.mainFooter nav {
+	visibility:hidden;
+	
+	}
+	
+	.search {
+ 	visibility:hidden;
+ 	}
 	
 }
 

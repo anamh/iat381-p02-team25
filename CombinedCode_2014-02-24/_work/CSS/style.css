@@ -1,23 +1,76 @@
-body{ 
-	background-color: rgb(0,0,0);
-	background: url(../Images/background41.jpg);
-	color: rgb(0,0,0);
+/**-----------------------------------------------------------------------------------------------------------------
+DEFAULT BODY STYLE
+----------------------------------------------------------------------------------------------------------------**/ 
+
+body {
 	font-size: 100%;
 	font-family: "Gill Sans MT", Arial, Helvetica, sans-serif;
 	line-height: 1.25;
 	text-align: left;
 }
 
+
+
+a {
+	text-decoration: none;
+}
+
+a:link, a:visited { 
+	color: rgb(0,0,0);
+}
+
+ul, li {
+	list-style: none;
+	text-align:left; 
+	padding-left:0; 
+}
+
+
 #page-wrap {
 	text-align: left; 
-	width: 900px;
+	width: 1000px;
 	margin: 0 auto; 
 
+} /** Specify style for page-wrap ID to centre website **/
 
+/**-----------------------------------------------------------------------------------------------------------------
+HEADER STYLE 
+-----------------------------------------------------------------------------------------------------------------**/
+
+.search {
+	float:left; 
+	font-size:1.25em;
+	margin-left:275px;
+	margin-top:100px;
 
 }
-/** Specify style for page-wrap ID to centre website **/
 
+.searchtext { 
+	float:left; 
+	color: white;
+	margin-right:5px; 
+	
+}
+
+.searchfield {
+	float:left;
+	margin-top:22px; 
+
+}
+
+	
+.submitbutton {
+	float:left; 
+	position:relative;
+	top:15px; 
+	padding:3px;
+	font-size:0.7em;
+	border:none; 
+	background-color:#C0C0C0;
+	margin:5px;
+	
+
+} 
 
 
 *, *:after, *:before {
@@ -27,69 +80,59 @@ body{
 }
 
 #ReFindLogo {
-float: left; 
+float:left;
+margin-top:20px;
+ 
 
 }
 
-
-a {
-	text-decoration: none;
-}
-
-a:link, a:visited { 
-color: rgb(0,0,0);
-}
-
-a:hover, a:active {
-background-color: rgb(0,0,0);
-color:rgb(255,255,255);
-}
-
-.mainheader{
-	background-color: rgb(0,0,0);
-	border-bottom: solid;
-	border-color: black;
-	border-width: 10px;
+.mainheader {
+	background-color:black;
+	padding:30px;
+	height:300px;
 }
 
 .mainheader img {
 	width: 30%;
 	height: auto;
 	margin: 2%;
+	float:left;
+
 }
 
 .mainheader nav {
 	background-color: rgb(0,0,0);
-	height: 100%;
+	width:100%; 
 	font-size: 150%;
-	margin-bottom: 3%;
-
-
+	overflow:auto;
+	position:relative; 
+	top:25px;
+	left:30px;
 }
 
 .mainheader nav ul {
 
 	list-style: none;
 	margin: 0 auto;
-	border-left: solid;
-	border-color: black;
-	border-width: 10px;
-	
 }
 
 .mainheader nav li {
 	float: left;
 	display: inline;
 	padding: 1% 1%;
-	background-color: rgb(0,0,0);
 }
 
 .mainheader nav a:link, .mainheader nav a:visited {
 	color: rgb(255,255,255);
 	display: inline-block;
-	text-shadow: 1px 1px 1px #000;
 	
 }
+
+
+
+/**-----------------------------------------------------------------------------------------------------------------
+MAIN NAV STYLE 
+-----------------------------------------------------------------------------------------------------------------**/
 
 .about {
 color:white;
@@ -101,11 +144,11 @@ border-bottom: transparent;
 border-left: transparent;
 border-right: transparent;
 border-top-color:white;
-position: relative;
 }
 
 .about:hover {
   border-top-color: rgb(56,180,73);
+  
 }
 
 .home {
@@ -134,7 +177,6 @@ border-bottom: transparent;
 border-left: transparent;
 border-right: transparent;
 border-top-color:white;
-position: relative;
 }
 
 .products:hover {
@@ -151,7 +193,6 @@ border-bottom: transparent;
 border-left: transparent;
 border-right: transparent;
 border-top-color:white;
-position: relative;
 }
 
 .workshop:hover {
@@ -202,12 +243,12 @@ border-bottom: transparent;
 border-left: transparent;
 border-right: transparent;
 border-top-color:white;
-position: relative;
 }
 
 .blog:hover {
   border-top-color: rgb(247,147,29);
 }
+
 
 .contact {
 color:white;
@@ -226,163 +267,16 @@ border-top-color:white;
 }
 
 
-.dropdown_about, 
-.dropdown_products, 
-.dropdown_workshops{
 
-    margin:4px auto;
-    float:left;
-    position:absolute;
-    left:-999em; /* Hides the drop down */
-    text-align:left;
-    padding:10px 5px 10px 5px;
-    border:none;
-    border-top:none;
-     
-    background-color: black;
+/**-----------------------------------------------------------------------------------------------------------------
+PAGE CONTENT STYLE 
+-----------------------------------------------------------------------------------------------------------------**/ 
 
-width: 700px;}
-
-.dropdown_blog {
-
-    margin:4px auto;
-    float:right;
-    position:absolute;
-    left:-999em; /* Hides the drop down */
-    text-align:left;
-    padding:10px 5px 10px 5px;
-    border:none;
-    border-top:none;
-    
-    background-color: black;
-
-
-width: 700px;}
-
-nav li:hover .dropdown_about {
-    left:-1px;
-    top:auto;
-    z-index: 9999;
-}
-
-nav li:hover .dropdown_products {
-    left:-1px;
-    top:auto;
-    z-index: 9999;
-}
-
-nav li:hover .dropdown_workshops {
-    left:-1px;
-    top:auto;
-    z-index: 9999;
-}
-
-nav li:hover .dropdown_blog {
-    left:-1px;
-    top:auto;
-    z-index: 9999;
-}
-
-
-
-.col_1,
-.col_2,
-.col_3,
-.col_4,
-.col_5 {
-    display:inline;
-    float: left;
-    position: relative;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-.col_1 {width:130px;}
-.col_2 {width:300px;}
-.col_3 {width:410px;}
-.col_4 {width:550px;}
-.col_5 {width:690px;}
- 
-/* Right alignment */
- 
-nav .menu_right {
-    float:right;
-    margin-right:0px;
-}
-nav li .align_right {
-    /* Rounded Corners */
-    -moz-border-radius: 5px 0px 5px 5px;
-    -webkit-border-radius: 5px 0px 5px 5px;
-    border-radius: 5px 0px 5px 5px;
-}
-nav li:hover .align_right {
-    left:auto;
-    right:-1px;
-    top:auto;
-}
- 
-/* Drop Down Content Stylings */
- 
-nav p {
-    font-family:Arial, Helvetica, sans-serif;
-    line-height:21px;
-    font-size:12px;
-    text-align:left;
-    text-shadow: 1px 1px 1px #FFFFFF;
-}
-nav h2 {
-    font-size:21px;
-    font-weight:400;
-    letter-spacing:-1px;
-    margin:7px 0 14px 0;
-    padding-bottom:14px;
-    border-bottom:1px solid #666666;
-}
-nav h3 {
-    font-size:14px;
-    margin:7px 0 14px 0;
-    padding-bottom:7px;
-    border-bottom:1px solid #888888;
-}
-nav p {
-    line-height:18px;
-    margin:0 0 10px 0;
-}
- 
-
-.strong {
-    font-weight:bold;
-}
-.italic {
-    font-style:italic;
-}
-
-
-
-nav li ul {
-    list-style:none;
-    padding:0;
-    margin:0 0 12px 0;
-}
-nav li ul li {
-    font-size:14px;
-    line-height:24px;
-    position:relative;
-    text-shadow: 1px 1px 1px #ffffff;
-    padding:0;
-    margin:0;
-    float:none;
-    text-align:left;
-    width:130px;
-}
-
-
- 
 
 
 .mainblock {
-
 background-color:black;
-height: 32rem; 
+height: 35rem; 
 padding: 3% 5%; 
 border-bottom: dashed;
 border-bottom-color: white;
@@ -390,11 +284,156 @@ margin-bottom: 10px;
 
 }
 
+.productslisting {
+	background-color:white;
+	min-height: 20em; 
+	padding: 3% 5%; 
+	overflow:scroll; 
+	/** overflow:hidden keeps .thumbnail images nested in .productslisting tag **/
+}
+
+.productslisting h2 {
+	color: rgb(158,30,98); 
+}
+
+.productslisting a:hover, active {
+	color: rgb(158,30,98);
+	text-decoration:underline;
+}
+
+
+ 
+
+/* 
+
+.productslisting a:hover, a:active { 
+	background-color: rgb(158,30,98);
+}
+ */
+
+
+/** Trying to override "a" css style with SPECIFIC button effect **/
+
+
+
+.thumbnailwrapper {
+  	margin:5px;
+	padding: 5px;
+  	height:auto;
+  	width:auto;
+  	float:left;
+  	text-align:center;
+}
+
+a.thumbnail img {
+  margin:5px;
+  height:215px;
+  width:215px;
+  transition: 0.5s opacity; 
+  border:5px;
+  border-style:solid;
+  border-color:#9E1E62; 
+  
+}
+
+a.thumbnail:hover {
+	background-color: white;
+}
+
+a.thumbnail:hover img {
+	opacity:0.5; 
+	
+
+}
+
+.top-sidebar{
+	height:500px;
+	width: 30%;
+	float: left;
+	background-color: #E8E8E8;
+	padding: 2% 3%;
+	margin-bottom: 2%;
+}
+  
+
+.partnerslogos {
+	position:relative;
+	height:100%;
+	width:100%;
+	display: block;
+	overflow: hidden; 
+}
+
+.partnerimg {
+	position:relative;
+	width:100%;
+	
+
+}
+
+.mainContent {
+	display:block; 
+	line-height: 25px;
+	overflow: hidden;
+	margin-right: 0 auto;
+	background-color: #E8E8E8;
+ 	/** Use "faux column" effect so .top-sidebar appears to be the same 
+ 	height as .content. Tutorial link: http://www.hongkiat.com/blog/css-equal-height/ **/
+}
+
+.content{
+	width: 70%;
+	background-color: rgb(204,204,204);
+	float: left;
+}
+
+.content h2 {
+	color: rgb(247,147,29);
+}
+
+.content a:hover, active {
+	text-decoration:underline;
+	color:rgb(247,147,29);
+}
+
+.topcontent{
+	
+	padding: 3% 5%;
+	margin-top: 2px;
+}
+
+.bottomcontent{
+	padding: 3% 5%;
+	margin-top: 2px;
+}
+
+.post-info{
+	font-style: italic;
+	color: rgb(255,255,255);
+	font-size: 85%;
+
+}
+
+
+figcaption {
+	color: black;
+	font-size: 0.75em;
+	font-family: "Gill Sans MT", Arial, Helvetica, sans-serif;
+	font-style: italic;
+	text-align: left;
+	width:100px; 
+	
+}
+
+
+/**-----------------------------------------------------------------------------------------------------------------
+CAROUSEL STYLE 
+-----------------------------------------------------------------------------------------------------------------**/ 
 
 
 #carousel-frame{
-	width: 537px;
-	height: 400px;
+	width: 100%;
+	height: 100%;
 	overflow: hidden;
 	position: relative;
 	margin: 0 auto;
@@ -450,102 +489,58 @@ margin-bottom: 10px;
 	margin-left: 30px;
 }
 
-.productslisting {
-	background-color:white;
-	min-height: 20em; 
-	padding: 3% 5%; 
-	overflow:hidden; 
-	/** overflow:hidden keeps .thumbnail images nested in .productslisting tag **/
-}
 
-div.thumbnail {
-  	margin:5px;
-	padding: 5px;
- 	 border:none;
-  	height:auto;
-  	width:auto;
-  	float:left;
-  	text-align:center;
-}
 
-div.thumbnail img {
-  display:inline;
-  margin:5px;
-  border:none;
-  height:108px;
-  width:108px; 
-}
+/**-----------------------------------------------------------------------------------------------------------------
+FOOTER STYLE AND NAV
+-----------------------------------------------------------------------------------------------------------------**/
 
-div.thumbnail img a:hover, a:active { 
-	background-color: rgb(158,30,98);
-}
-/** Trying to override "a" css style with SPECIFIC button effect **/
 
-  
-div.partnerslogos {
-	display: block;
-	overflow: hidden; 
-	height: auto;
-	width:auto;
-	background: none;  
-}
-
-.mainContent {
-
-	display:block; 
-	line-height: 25px;
-	overflow: hidden;
-	margin-right: 0 auto;
-	background-color: rgb(164,164,164);
- 	/** Use "faux column" effect so .top-sidebar appears to be the same 
- 	height as .content. Tutorial link: http://www.hongkiat.com/blog/css-equal-height/ **/
-}
-
-.content{
-	width: 70%;
-	background-color: rgb(204,204,204);
-	float: left;
-}
-
-.topcontent{
-	
-	padding: 3% 5%;
-	margin-top: 2px;
-}
-
-.bottomcontent{
-	padding: 3% 5%;
-	margin-top: 2px;
-}
-
-.post-info{
-	font-style: italic;
-	color: rgb(255,255,255);
-	font-size: 85%;
-
-}
-
-.top-sidebar{
-	width: 30%;
-	float: left;
-	background-color: rgb(164,164,164);
-	padding: 2% 3%;
-	margin-bottom: 2%;
-}
 .mainFooter{
 	width: 100%;
 	float: left;
 	background-color: rgb(0,0,0);
-	margin-top: 2%;
-}
-.mainFooter p {
 	color: rgb(255,255,255);
-	width: 90%;
-	margin: 2% auto;
+	height:150px; 
+	padding-left:30px;
+	padding-right:30px;
+}
+
+.mainFooter nav{
+	position:relative;
+	left:400px;
 
 }
 
-@media only screen and (min-width:150px) and (max-width:900px) {
+.mainFooter a {
+	color:#FFFFFF; 
+	float:left;
+	display:inline; 
+	padding:5px;
+	font-size:0.9em;
+
+}
+
+.mainFooter a:hover, active{
+	text-decoration:underline;
+}
+
+.mainFooter ul {
+	list-style:none;
+
+}
+
+p.copyrightdisclaimer {
+	display:block; 
+	float:left;
+
+}
+
+/**-----------------------------------------------------------------------------------------------------------------
+@MEDIA RESPONSIVE CODE
+-----------------------------------------------------------------------------------------------------------------**/
+
+@media only screen and (min-width:150px) and (max-width:600px) {
 
 	.body {
 	width:90%; 
@@ -562,6 +557,18 @@ div.partnerslogos {
 	.thumbnail {
 	max-width: 100%;  
  	}
+ 	
+ 	.mainheader {
+ 	width:100%;
+ 	}
+ 	
+ 	.mainheader nav { 
+ 	width:100%;
+ 	}
+ 	
+ 	.search {
+ 	visibility:hidden;
+ 	}
 	
 	.content {
 	width:100%; 
@@ -571,27 +578,43 @@ div.partnerslogos {
 	width:100%; 
 	}
 	
-	
-	#carousel-nav {
+	.mainblock {
 	width:100%; 
-	}
-	
-	#carousel-inner{
-	width:100%; 
-	}
-	
-	#prev {
-	width:10%; 
-	}
-	
-	#next {
-	width:10%; 
 	}
 	
 	div.partnerslogos {
 	display: inline-block;
-	width: 75%; 
+	width: 100%; 
 	}
+	
+	.partnerimg {
+	
+	width:100%;
+	height:33.33%;
+	
+	}
+	
+	#carousel-frame{
+	visibility:hidden;
+
+
+}
+	
+	.carousel-slide {
+	visibility:hidden;
+}
+
+	.mainFooter {
+	width:100%;
+	}
+	
+	.mainFooter nav {
+	visibility:hidden;
+	
+	}
+	
+	
+	
 	
 	
 }
