@@ -2,13 +2,14 @@
 DEFAULT BODY STYLE
 ----------------------------------------------------------------------------------------------------------------**/ 
 
-body { 
-	background-color: white;
+body {
 	font-size: 100%;
 	font-family: "Gill Sans MT", Arial, Helvetica, sans-serif;
 	line-height: 1.25;
 	text-align: left;
 }
+
+
 
 a {
 	text-decoration: none;
@@ -16,6 +17,12 @@ a {
 
 a:link, a:visited { 
 	color: rgb(0,0,0);
+}
+
+ul, li {
+	list-style: none;
+	text-align:left; 
+	padding-left:0; 
 }
 
 
@@ -54,10 +61,16 @@ HEADER STYLE
 	
 .submitbutton {
 	float:left; 
-	margin-top:22px; 
+	position:relative;
+	top:15px; 
+	padding:3px;
+	font-size:0.7em;
+	border:none; 
+	background-color:#C0C0C0;
+	margin:5px;
+	
 
 } 
-
 
 
 *, *:after, *:before {
@@ -76,6 +89,7 @@ margin-top:20px;
 .mainheader {
 	background-color:black;
 	padding:30px;
+	height:300px;
 }
 
 .mainheader img {
@@ -91,6 +105,9 @@ margin-top:20px;
 	width:100%; 
 	font-size: 150%;
 	overflow:auto;
+	position:relative; 
+	top:25px;
+	left:30px;
 }
 
 .mainheader nav ul {
@@ -259,7 +276,7 @@ PAGE CONTENT STYLE
 
 .mainblock {
 background-color:black;
-height: 32rem; 
+height: 35rem; 
 padding: 3% 5%; 
 border-bottom: dashed;
 border-bottom-color: white;
@@ -328,13 +345,30 @@ a.thumbnail:hover img {
 	
 
 }
+
+.top-sidebar{
+	height:500px;
+	width: 30%;
+	float: left;
+	background-color: #E8E8E8;
+	padding: 2% 3%;
+	margin-bottom: 2%;
+}
   
-div.partnerslogos {
+
+.partnerslogos {
+	position:relative;
+	height:100%;
+	width:100%;
 	display: block;
 	overflow: hidden; 
-	height: auto;
-	width:auto;
-	background: none;  
+}
+
+.partnerimg {
+	position:relative;
+	width:100%;
+	
+
 }
 
 .mainContent {
@@ -380,13 +414,6 @@ div.partnerslogos {
 
 }
 
-.top-sidebar{
-	width: 30%;
-	float: left;
-	background-color: #E8E8E8;
-	padding: 2% 3%;
-	margin-bottom: 2%;
-}
 
 figcaption {
 	color: black;
@@ -405,8 +432,8 @@ CAROUSEL STYLE
 
 
 #carousel-frame{
-	width: 537px;
-	height: 400px;
+	width: 100%;
+	height: 100%;
 	overflow: hidden;
 	position: relative;
 	margin: 0 auto;
@@ -513,7 +540,7 @@ p.copyrightdisclaimer {
 @MEDIA RESPONSIVE CODE
 -----------------------------------------------------------------------------------------------------------------**/
 
-@media only screen and (min-width:150px) and (max-width:900px) {
+@media only screen and (min-width:150px) and (max-width:600px) {
 
 	.body {
 	width:90%; 
@@ -530,6 +557,18 @@ p.copyrightdisclaimer {
 	.thumbnail {
 	max-width: 100%;  
  	}
+ 	
+ 	.mainheader {
+ 	width:100%;
+ 	}
+ 	
+ 	.mainheader nav { 
+ 	width:100%;
+ 	}
+ 	
+ 	.search {
+ 	visibility:hidden;
+ 	}
 	
 	.content {
 	width:100%; 
@@ -545,8 +584,35 @@ p.copyrightdisclaimer {
 	
 	div.partnerslogos {
 	display: inline-block;
-	width: 75%; 
+	width: 100%; 
 	}
+	
+	.partnerimg {
+	
+	width:100%;
+	height:33.33%;
+	
+	}
+	
+	#carousel-frame{
+	visibility:hidden;
+
+
+}
+	
+	.carousel-slide {
+	visibility:hidden;
+}
+
+	.mainFooter {
+	width:100%;
+	}
+	
+	.mainFooter nav {
+	visibility:hidden;
+	
+	}
+	
 	
 	
 	
